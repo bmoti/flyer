@@ -29,7 +29,7 @@
 		</div>
 	</nav>
 	<div class="container">
-		@yield('content' )
+		@yield('content')
 	</div>
 	<script src="/js/libs.js"></script>
 	@include('flash')

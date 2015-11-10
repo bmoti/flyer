@@ -20,11 +20,10 @@
 @section('scripts.footer')
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.2.0/dropzone.js"></script>
 	<script>
-		Dropzone.options.addPhotoForm({
+		Dropzone.options.addPhotoForm = {
 			paramName: 'photo',
 			maxFilesize : 3,
 			acceptedFiles: '.jpg, .jpeg, .png, .bmp'
-		});
+		};
 	</script>
-	
 @endsection
