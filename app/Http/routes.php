@@ -25,3 +25,4 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 Route::resource('flyers', 'FlyersController');
 Route::get('{zip}/{street}', 'FlyersController@show');
 Route::post('{zip}/{street}/{photos}', 'PhotosController@addPhoto');
+Route::delete('photos/{id}', 'PhotosController@destroy');
