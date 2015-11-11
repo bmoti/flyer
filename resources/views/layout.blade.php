@@ -17,7 +17,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">ProjectFlyer</a>
+				<a class="navbar-brand" href="/">ProjectFlyer</a>
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
@@ -28,6 +28,11 @@
 				@if ($signedIn)
 					<p class="navbar-text navbar-right">
 						Hello, {{$user->name}}
+					</p>
+				@else
+					<p class="navbar-text navbar-right">
+						<a href="/auth/login" class="btn btn-primary">Log in</a>
+						<a href="/auth/register" class="btn btn-primary">Sign up</a>
 					</p>
 				@endif
 			</div><!--/.nav-collapse -->

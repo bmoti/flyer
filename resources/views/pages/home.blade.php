@@ -8,7 +8,7 @@
 	@if ($signedIn)
 		<a href="/flyers/create" class="btn btn-primary">Create a flyer</a>
 	@else
-		<a href="/auth/register" class="btn btn-primary">Register</a>
+		<a href="/auth/register" class="btn btn-primary">Sign up</a>
 	@endif
 </div>
 @endsection;
