@@ -2,7 +2,7 @@
 
 @section('content')
 	<h1>Selling your Home?</h1>
-	<form method="POST" action="/flyers">
+	<form method="post" action="/flyers">
 		@include('flyers.form')
 		@include('errors')
 	</form>
